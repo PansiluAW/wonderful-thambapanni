@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Quiz.css">
+        <title>QUIZ</title>
+    </head>
+    <body>
+        <!--navigation bar-->
+        <div class = "headpane">			
+            <img class = "titlepane" src = "Pictures/Wonderfulතම්බපණ්ණි(whitebg).png" alt = "Wonderful තම්බපණ්ණි Logo" height = "164" width = "150">
+            <p class = "titlepane">WONDERFUL THAMBAPANNI</p>
+            <p id = "paratitlepane">The Beautiful Little Island</p>
+            <Ol id = "navipane">
+                <li><a href = "homepage.html">Home</a></li>
+                <li><a href = "ProductPage.html">Our Products</a></li>
+                <li><a href = "thumbnail.html">Gallery</a></li>
+                <li><a href = "Quiz.html">Quiz</a></li>
+                <li><a href = "homepage.html#location">Locations</a></li>
+                <li><a href = "studentDetail.html">Student Details</a></li>
+                <li><a href = "CwContactUs1.html">Contact Us</a></li>			
+                <li><a href = "siteMap.html">Site Map</a></li>
+            </Ol>
+        </div>
+        <br>
+        <div id="struture">
+            <div id="topic">
+                <p id="heading">Test your knowledge about </p>
+                <strong> SRI LANKA!</strong>
+            </div>
+
+            <div class="center">
+                <button id="goBtn" class="button"><span>GO</span></button>
+            </div>
+            
+            
+            
+            <div id="startbutton">
+                <p id="start"></p>
+            </div>
+
+            <div id="time">
+                <p id="timetext"></p>
+                <div id="timer">
+                </div >
+            </div>
+            <!--answers struture , where ans are called-->
+            <div id="questionStruture">
+                <h2 id="question"></h2>
+                <br>
+                <div id="answers">
+                    <form name="answersform" >
+                    <label class="a" id="ans1" ></label>
+                    <label class="a" id="ans2"></label>
+                    <label class="a" id="ans3"></label>
+                    <label class="a" id="ans4"></label>  
+                    </form>
+                </div>
+                <div id="output"></div>
+                
+                <div id="rules">
+                    <p id="rules1"></p>
+                    <p id="rules2"></p>
+                    <p id="rules3"></p>
+                </div>
+                <br>
+                <div class="center">
+                    <button id="startBtn" class="button" ><span>Start Quiz</span></button>
+                </div>
+                <div class="center">
+                    <p id="clickNext"></p>
+                    <button id="nextBtn" class="button" >Next</button>
+                </div>
+                
+            </div>
+            <!--where results are shown-->
+            <div id="resultStruture">
+                
+                <p id="message"></p>
+                <p id="scoreOutput"></p>
+                <p id="repeat1"></p>
+                <p id="good"></p>
+                <p id="mid"></p>
+                <p id="bad"></p>
+                <br><br>
+                <div class="center">
+                    <button id="showBtn" class="button" >Show Result</button>
+                </div>
+                <div id="showResult">
+                    <p id="A1"></p>
+                    <p id="A2"></p>
+                    <p id="A3"></p>
+                    <p id="A4"></p>
+                    <p id="A5"></p>
+                    <p id="A6"></p>
+                    <p id="A7"></p>
+                    <p id="A8"></p>
+                    <p id="A9"></p>
+                    <p id="A10"></p>
+                </div>
+                <div class="center">
+                    <button id="repeatBtn" class="button" >Try Again</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="Quiz.js"></script>   
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <!--footer-->
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-heading footer-1">
+                        <div class="heading">About us</div>
+                        <a href="editors-page-pasan.html">Editor's Page</a>
+                        <a href="siteMap.html">Site map</a>
+                        <a href="CwContactUs1.html">Contact us</a>
+                    </div>
+                    
+                    <div class="footer-email-form">
+                        <div class="heading">Join our newsletter</div>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input type="submit" value="Sign Up" id="footer-email-btn">
+                    </div> 
+                    <div class="footer-media-img">
+                        <a href="#"><img src="Pictures/iconmonstr-facebook-4.png" alt="Facebook"></a>
+                        <a href="#"><img src="Pictures/iconmonstr-instagram-14.png" alt="Instagram"></a>
+                        <a href="#"><img src="Pictures/iconmonstr-youtube-9.png" alt="Youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>

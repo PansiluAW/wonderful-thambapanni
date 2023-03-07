@@ -1,0 +1,59 @@
+/*setting background as a image*/
+body{
+	background-image:url("Pictures/editorpagebg.jpg");
+	background-repeat:repeat;
+}
+/*styling student 1 title*/
+h1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:50px;
+	letter-spacing:1px;
+}
+/*setting and styling profile picture*/
+#profilepicture{
+	border-radius:50%;
+	border:10px double black;
+}
+
+#student1dp{
+	text-align:center;
+}
+/*setting and styling fields of information*/
+.fields{
+	background-color: #b5b5b5;
+	width:900px;
+	text-align: center;
+	margin: 25px auto 25px auto;
+	padding:25px;
+	border-radius:20px;
+	box-shadow:1px 10px;
+	margin-bottom:10px;
+}
+
+.importantdetails{
+	font-weight:bolder;
+}
+
+.legend{
+	font-size: 40px;
+	font-weight:bolder;
+	letter-spacing:1px;
+}
+
+p{
+	font-size:28px;
+}
+
+/*setting a background common to both fields of information (personal and assigned role details)*/
+#backgroundgroup{
+	background-color:#909090;
+	border-radius:50px;
+	margin: 4% 15% 4% 15%;
+	padding-bottom:4%;
+	padding-top:1%;
+}
+
+#title{
+	margin-top:1%;
+}

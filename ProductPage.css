@@ -1,0 +1,278 @@
+/*styling the each product related sections*/
+.picturesouterlink{
+	width:350px;
+	height:350px;
+	padding: 40px;
+	border : 5px solid #04a96d;
+	border-radius: 22px;
+	display:inline-block;
+	background-color: #ebedee;
+	box-shadow: 1px 10px;
+}
+
+.picturesinnerlink{
+	width:350px;
+	height:350px;
+	border-radius: 25px;
+}
+
+/*styling each product picture*/
+.pictures{
+	text-align:center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.itemtitles{
+	text-align:center;
+	font-size: 40px;
+	font-family: Ariel Helvetica sans-serif;
+	color:#414447;
+	margin-top:0px;
+	margin-bottom: 50px;
+}
+
+#ruler{
+	margin-bottom: 4%;
+	margin-top:5%;
+	width: 95%;
+	height:4px;
+	background-color: #a7a7a7;
+	border-radius:10px;
+}
+
+/*styling common headpane of the website*/
+.headpane{
+	display:inline-block;
+	position:sticky;
+	top:0;
+	background-color:#11998e;
+	z-index:1;
+}
+
+div.headpane{
+	width:100%;
+	height:150px;
+}
+
+p.titlepane{
+	font-size:50px;
+	margin-top:30px;
+	margin-bottom:8px;
+	font-weight:bolder;
+}
+
+img.titlepane{
+	float:left;
+}
+
+#paratitlepane{
+	font-size:25px;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:10px;
+	font-weight:bold;
+}
+
+/*Styling common navigation of the website*/				
+#navipane li{
+	list-style-type:none;					
+	color:white;
+	display:inline-block;
+	font-size: 34px;
+	background-color: #505050;
+	padding-left:19px;
+	padding-right:19px;
+	margin-right:-4px;
+}
+
+#navipane li:hover{
+	background-color: #11998e;
+}
+
+#navipane li a{
+	color: white;
+	text-decoration:none;
+}
+
+/*styling the title and subtitle of the page with a background as an image*/
+h1.ourproducttitle{
+	text-align:center;
+	font-size:100px;
+	margin-bottom:0;
+	margin-top:0;
+	padding-top:200px;
+}
+
+h2.ourproducttitle{
+	text-align:center;
+	font-size:40px;
+	letter-spacing:2px;
+	margin-bottom:150px;
+}
+
+#producttitlebg{
+	background-image: url("Pictures/productpagebackground.jpg");
+	background-repeat:no-repeat;
+	background-size:100% 90%;
+	height:700px;width:100%;
+	color:white;
+	border-radius:25px;
+}	
+		
+/*styling separate groups of product categories as mask and tshirts*/
+.productgroups{
+	background-color: #d7d9da;
+	border-radius:22px;
+	display:inline-block;
+	padding: 0 0 2% 0;
+}
+
+/*styling the common footer of the website*/
+.footercontainer{
+	background-color: rgb(62, 119, 38);
+	padding:2rem 0 1rem 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+	width: 80%;
+	height: 40vh;
+	background-color: rgb(62, 119, 38);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	}
+
+.footerheading{
+	display: flex;
+	flex-direction: column;
+	margin-right: 4rem;
+}
+
+.footerheading h2{
+	margin-bottom: 2rem;
+}
+
+.footerheading a{
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+}
+
+.footerheading a:hover, a::after{
+	color: red;
+	transition: 0.3s ease-out;
+	font-size: 160%;
+}
+
+.footeremailform h2{
+	margin-bottom: 2rem;
+}
+
+#footeremail{
+	width: 250px;
+	height: 40px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	padding-left: 0.5rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+#footeremail::placeholder{
+	color: rgb(151, 150, 150);
+}
+			
+#footeremailbtn{
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: rgb(69, 160, 98);
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+#footeremailbtn:hover{
+	cursor: pointer;
+	background-color: rgb(15, 70, 153);
+	transition: all 0.4s ease-out;
+}
+
+.footer img{
+	display: inline;
+	width: 15%;
+	height: auto;
+	padding: 0 0 0 10px;
+	margin:50px 0 0 20px;
+}
+
+/*styling the product sub details*/
+.itemdesc{
+	 text-shadow:1px 0 #04a96d;
+	 margin-top:5%;
+}
+
+/*styling quantity setter under each product*/
+input[type = number]{
+	border:4px solid #04a96d;
+	border-radius:10px;
+	padding:1px 5px 1px 5px;
+	text-align:center;
+	background-color:#afe3d0;
+	font-size:20px;
+	font-weight:bold;
+}
+
+/*styling the detail form*/
+.form{
+	padding:5px 5px 5px 5px;
+	border-radius:8px;
+	font-size:17px;
+	font-weight:bold;
+}
+
+form{
+	margin-left:25%;
+	margin-right:25%;
+	margin-bottom:5%;
+	padding-top:4%;
+	padding-left:2%;
+	padding-bottom:4%;
+	background-color:grey;
+	border-radius:20px;
+}
+
+#formtitle{
+	font-size:55px;
+	font-family:Sans-serif, Verdana ;
+	font-weight:bold;
+	margin:0 0 50px 28%;
+	text-shadow:1px 2px white;
+}
+
+#checkout{
+	margin-left:40%;
+	margin-top:1%;
+	font-size:20px;
+	font-weight:bold;
+	border-radius:10px;
+}
+
+#total{
+	margin-left:22%;
+	margin-top:5%;
+	font-size:30px;
+	font-weight:bold;
+	text-shadow:4px 0 #6e897f;
+	text-decoration:underline overline wavy 2px;
+}
+
+#detailform{
+	margin-top:50px;
+}

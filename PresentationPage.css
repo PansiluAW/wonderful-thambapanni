@@ -1,0 +1,104 @@
+/*styling common headpane of the website*/
+.headpane{
+	display:inline-block;
+	position:sticky;
+	top:0;
+	background-color:#11998e;
+	z-index:1;
+}
+
+div.headpane{
+	width:100%;
+	height:150px;
+}
+
+p.titlepane{
+	font-size:50px;
+	margin-top:30px;
+	margin-bottom:8px;
+	font-weight:bolder;
+}
+
+img.titlepane{
+	float:left;
+}
+
+#paratitlepane{
+	font-size:25px;
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:10px;
+	font-weight:bold;
+}
+/*Styling common navigation of the website*/				
+#navipane li{
+	list-style-type:none;					
+	color:white;
+	display:inline-block;
+	font-size: 34px;
+	background-color: #505050;
+	padding-left:19px;
+	padding-right:19px;
+	margin-right:-4px;
+}
+
+#navipane li:hover{
+	background-color: #11998e;
+}
+
+#navipane li a{
+	color: white;
+	text-decoration:none;
+}
+
+/*setting a gif as the background of the page*/
+#body{
+	background-image: url("Pictures/presentationbg.gif");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+/*displaying content side by side*/
+.content{
+	display:inline-block;
+}
+
+/*styling member details and the subtitle*/
+#memberdetails{
+	background-color:rgb(110,137,127,0.5);
+	margin-top:4%;
+	padding-left:100px;
+	padding-top:2px;
+	padding-bottom:4%;
+	border-radius:20px;
+}
+
+#detailstitle{
+	font-size:50px;
+	padding-left:10%;
+	padding-top:2%;
+	font-weight:bolder;
+	text-shadow:1px 0 #c6cbc9;
+	font-family:Sans-serif, Arial;
+}
+
+.members{
+	margin-left:9%;
+	font-size:36px;
+	font-weight:bold;
+	text-shadow:1px 0 #8ba098;
+	font-family:Serif, Georgia;
+	background-color:rgb(191,194,189,0.2);
+	border-radius:10px;
+	padding-left:1%;
+	padding-right:200px;
+}
+
+#topic{
+	font-size:70px;
+	margin: 0 0 0 200px;
+	font-family:Lucida Handwriting;
+	font-weight:bolder;
+	text-align:center;
+	text-shadow:8px 4px green;
+	color:white;
+}

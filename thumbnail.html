@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Select an image
+        </title>
+        <link rel = "stylesheet" href = "thumbnail.css">
+    </head>
+    <body>
+
+        <!-- Header and the naviagation bar -->
+        <div class = "headpane">			
+            <img class = "titlepane" src = "Pictures/Wonderfulතම්බපණ්ණි(whitebg).png" alt = "Wonderful තම්බපණ්ණි Logo" height = "180" width = "150">
+            <p class = "titlepane">WONDERFUL THAMBAPANNI</p>
+            <p id = "paratitlepane">The Beautiful Little Island</p>
+            <ul id = "navipane">
+                <li><a href = "homepage.html">Home</a></li>
+				<li><a href = "ProductPage.html">Our Products</a></li>
+				<li><a href = "thumbnail.html">Gallery</a></li>
+				<li><a href = "Quiz.html">Quiz</a></li>
+				<li><a href = "homepage.html#location">Locations</a></li>
+				<li><a href = "studentDetail.html">Student Details</a></li>
+				<li><a href = "CwContactUs1.html">Contact Us</a></li>			
+				<li><a href = "siteMap.html">Site Map</a></li>
+            </ul>
+        </div>            
+
+            
+        <!-- larger image and the discription -->
+
+        <div class = "display" id = "display">
+            <div id = "h1">
+            </div>
+            <img class = "di" id = "displayImage" style = "width: 580px; height: 500px" src = "pictures/default.png" alt = "Please Select an Image"/>
+            <div class = "diDescription" id = "diDescription">
+                discription
+            </div>         
+        </div>
+        
+
+        <!-- Spaces for small images -->
+        <div class = "smallImages" id = "smallImages">
+
+            <img src = "Pictures/image1.jpg" class = "im" id = "im1" alt = "imageNotFound"/>
+
+            <img src = "Pictures/image2.jpg" class = "im" id = "im2" alt = "imageNotFound"/>
+
+            <img src = "Pictures/image3.jpg" class = "im" id = "im3" alt = "imageNotFound"/>
+
+            <img src = "Pictures/image4.jpg" class = "im" id = "im4" alt = "imageNotFound"/>
+
+            <img src = "Pictures/image5.jpg" class = "im" id = "im5" alt = "imageNotFound"/>
+            
+        </div>
+        
+       
+         <!-- contains dragdown menues to change the background colour and the text colour -->
+        <div class = "settings" id = "settings">
+            <h3 class = 'h'>--- page settings ---</h3>
+            <form>
+                <!--label for the background Colour dragdown menu-->
+                <label for = "backgroundColour" id = "backgroundColorId">
+                    &nbsp;&nbsp;Background Colour : 
+                </label>
+
+                <!--selection list for the background Colour-->
+                <select name = "backgroundColour" id = "backgroundColour">
+                    <option value = "#FFFFFF">Plase Select</option>
+                    <option value = "#FF0000">Red</option>
+                    <option value = "#008000">Green</option>
+                    <option value = "#0000FF">Blue</option>
+                    <option value = "#FFFFFF">white</option>
+                    <option value = "#000000">Black</option>
+                </select>
+
+                &nbsp;&nbsp;&nbsp;
+                <!--label for the background Colour dragdown menu-->
+                <label for = "textColour" id = "textColorLabelId">
+                    text Colour : 
+                </label>
+
+                <!--selection list for the text colour-->
+                <select name = "textColour" id = "textColour">
+                    <option value = "#000000">Plase select</option>
+                    <option value = "#FFFFFF">White</option>
+                    <option value = "#FF0000">Red</option>
+                    <option value = "#008000">Dark Green</option>
+                    <option value = "#0000FF">Dark Blue</option>
+                    <option value = "#000000">Black</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+
+            <div class="footer-heading footer-1">
+                <h2>About us</h2>
+                <a href="editorsPagePasindu.html">Editor's Page</a>
+                <a href="siteMap.html">Site map</a>
+                <a href="CwContactUs.html">contact us</a>
+            </div>
+
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div> 
+
+            <div class="footer-media-img">
+                <a href="https://www.facebook.com"><img src="Pictures/iconmonstr-facebook-4.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="Pictures/iconmonstr-instagram-14.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com"><img src="Pictures/iconmonstr-youtube-9.png" alt="Youtube"></a>
+            </div>
+        </div>
+        
+        <script src = "tunmbnaillFunctions.js"></script>
+    
+    </body>
+</html>

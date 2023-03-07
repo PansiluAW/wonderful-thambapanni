@@ -1,0 +1,59 @@
+body{
+    background-image:url(Pictures/editorpagebg.jpg) ;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top:50px ;
+    color: white;
+
+}
+
+img{
+    border-radius: 60%;
+    width: 14%;
+    margin-left: 43%;
+    margin-top: 1%;
+    border: 5px solid black;
+}
+
+p{
+    text-align: center;
+    font-size: 130%;
+}
+
+#title,#title2{
+    font-size: 160%;
+}
+
+.container1{
+    border-radius: 5px;
+    background-color: #9c9c9c;
+    width: 30%;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 5px 9px 0 #0000002c;
+}
+
+.container2{
+    border-radius: 5px;
+    background-color: #9c9c9c;
+    width: 30%;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 161%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 5px 9px 0 #0000002c;
+}
+
+
+

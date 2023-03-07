@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="Contactus.css">
+    </head>
+    <body class="body">
+        <!-- The navigation pane -->
+        
+            <div class = "headpane">			
+                <img class = "titlepane" src = "Pictures/Wonderfulතම්බපණ්ණි(whitebg).png" alt = "Wonderful තම්බපණ්ණි Logo" height = "164" width = "150">
+                <p class = "titlepane">WONDERFUL THAMBAPANNI</p>
+                <p id = "paratitlepane">The Beautiful Little Island</p>
+                <ul id = "navipane">
+                    <li><a href = "homepage.html">Home</a></li>
+                    <li><a href = "ProductPage.html">Our Products</a></li>
+                    <li><a href = "thumbnail.html">Gallery</a></li>
+                    <li><a href = "Quiz.html">Quiz</a></li>
+                    <li><a href = "homepage.html#location">Locations</a></li>
+                    <li><a href = "studentDetail.html">Student Details</a></li>
+                    <li><a href = "CwContactUs1.html">Contact Us</a></li>			
+                    <li><a href = "siteMap.html">Site Map</a></li>
+                </ul>
+            </div>
+
+        <!-- Main heading -->
+        <h1>Contact Us</h1>
+        <!-- main div section -->
+        <div class="container" id="container">
+            <div class="insideContainer">
+                <!-- The Query Form -->
+                <form method="post" name="queryform" action="mailto:isira.20210029@iit.ac.lk" enctype="text/plain" id="form">
+                    <div id="part1">
+                        <label for="firstname" class="insideContainer">First Name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Your First name*">
+                        <label for="lastname" class="insideContainer">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Your last name*">
+
+                        <label for="email" class="insideContainer">E-mail</label>
+                            <input type="email" id="email" name="e-mail" placeholder="Enter Your Email*">
+
+                        <label for="subject" class="subject">Subject</label>
+                            <select name="country" id="select">
+                                <option value="pricing issues" class="option" selected>Pricing Issues</option>
+                                <option value="improvement" class="option">Improvement</option>
+                                <option value="review" class="option">Review</option>
+                                <option value="message" class="option">Message</option>
+                            </select>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" placeholder="write your message here*" style="height:200px"></textarea>
+                        <input type="button" value="View Query" onclick="ValidateEmail(this.form)" class="submit">
+                        <input type="reset" value="Reset" name="reset" class="resetbtn insideContainer">  
+                    </div>
+                    <div class="hide" id="query">
+                        <div id="userinfo">
+                            <h2 style="color:white"> QUERY RESULTS </h2>
+                            <br><br>
+                            <p style="color:white" id='display'></p><br>
+                            <p style="color:white" id='display1'></p><br>
+                            <p style="color:white" id='display2'></p><br>
+                            <p style="color:white" id='display3'></p><br>
+                            <p style="color:white" id='display4'></p><br><br>
+                        </div>
+                        <!-- div class for the edit and submit button in the view query -->
+                        <div class="action" id="summarybutton">
+                            <button class="editbtn" onclick="edit(event)">Edit</button>
+                            <button type="submit" class="btnsubmit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+        <!-- Footer section -->
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>About us</h2>
+                    <a href="AboutUs.html">Editor's Page</a>
+                    <a href="siteMap.html">Site map</a>
+                    <a href="CwContactUs1.html">Contact us</a>
+                </div>
+                
+                <div class="footer-email-form">
+                    <h2>Join our newsletter</h2>
+                    <input type="email" placeholder="Enter your email address" id="footer-email">
+                    <input type="submit" value="Sign Up" id="footer-email-btn">
+                </div> 
+                <div class="footer-media-img">
+                    <a href="www.facebook.com"><img src="Pictures/iconmonstr-facebook-4.png" alt="Facebook"></a>
+                    <a href="www.instagram.com"><img src="Pictures/iconmonstr-instagram-14.png" alt="Instagram"></a>
+                    <a href="www.youtube.com"><img src="Pictures/iconmonstr-youtube-9.png" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+        <!-- adding javascript validation and view query parts -->
+        <script>
+            function ValidateEmail(event){
+                var first_name = document.getElementById("firstname").value;
+                var last_name = document.getElementById("lastname").value;  
+                var email = document.getElementById("email").value;
+                var select1 = document.getElementById("select").value;				
+                var message = document.getElementById("message").value;    
+                var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                console.log(select1);
+                if(first_name == ""){
+                    alert("First Name field cannot be Empty!");
+                }
+
+                //else if(email.value.trim(mailformat)){
+                    //alert("invalid email address!!");
+                    //event.preventDefault();s
+                //}
+
+                else if(last_name == ""){
+                    alert("Last Name Field cannot be Empty");
+                }
+
+                else if (email == ""){
+                    alert("Email field cannot be Empty");
+                }
+
+                else if (message == ""){
+                    alert("Message Box cannot be Empty");
+                }
+                
+                else {
+                    document.getElementById("part1").classList.add("hide");
+                    document.getElementById("query").classList.remove("hide"); 
+                    document.getElementById('display').innerHTML = "First Name: &nbsp;"+ first_name;
+                    document.getElementById('display1').innerHTML = "Last Name: &nbsp;"+ last_name;			
+                    document.getElementById('display2').innerHTML = "Email: &nbsp;"+ email;	
+                    document.getElementById('display3').innerHTML = "subject: &nbsp;" + select1;
+                    document.getElementById('display4').innerHTML = "Message: &nbsp;"+ message; 
+                    
+                   
+                }
+            }
+            function edit(event){
+                document.getElementById("query").classList.add("hide");
+                document.getElementById("part1").classList.remove("hide");
+                event.preventDefault();
+            }
+
+        
+        </script>        
+	</body>
+</html>

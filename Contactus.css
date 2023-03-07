@@ -1,0 +1,286 @@
+/* the navigation pane */
+.headpane{
+  display:inline-block;
+  position:sticky;
+  top:0;
+  background-color:#11998e;
+  z-index:1;
+}
+/* setting the size in the navigation pane*/
+div.headpane{
+  width:100%;
+  height:150px;
+}
+
+/* setting the css for the title in the navigation Pane*/
+p.titlepane{
+  font-size:50px;
+  margin-top:30px;
+  margin-bottom:8px;
+  font-weight:bolder;
+}
+img.titlepane{
+  float:left;
+}
+
+/* adding styles to the beautiful little island */
+#paratitlepane{
+  font-size:25px;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:10px;
+  font-weight:bold;
+}
+
+/* the styles for the navigation pane*/
+#navipane li{
+    list-style-type:none;
+    color: white;
+    display:inline-block;
+    font-size: 34px;
+    background-color: #505050;
+    padding-left:19px;
+    padding-right:19px;
+    margin-right:-4px;
+}
+/*adding hovering to the navigation pane*/  
+#navipane li:hover{
+    background-color: #11998e;
+}
+
+#navipane li a{
+    color: white;
+    text-decoration: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the main heading */
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    margin-top: 6%; 
+}
+
+/* changing font size and style of labels */
+label{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+/* Adding background image  */
+.body{
+    background-image:url(Pictures/dinuka-lankaloka-MaYOrZIeuU8-unsplash.jpg) ;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/dinuka-lankaloka-MaYOrZIeuU8-unsplash.jpg);
+}
+
+/* adding styles to texts */
+input[type=text],input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid rgb(12, 201, 84); 
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+  }
+
+#userinfo{
+  font-size: 20px;
+}  
+
+/* adding styles to view query button */
+.submit {
+    background-color: #45a049;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+    color: white;
+  }
+
+/* adding styles to edit button */
+.editbtn{
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+}
+
+/* adding styles to edit button */
+.btnsubmit{
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+}
+
+/* adding styles to the reset button */
+.resetbtn {
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 75%;
+  font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+  
+}  
+
+/* adding hover effects to the buttons */  
+  input[type=button]:hover, input[type=reset]:hover, .editbtn:hover, .resetbtn:hover, .btnsubmit:hover {
+    background-color: #252525 ;
+    transition: 0.3s;
+  }
+
+ 
+  .option{
+    color: #000000;
+  }
+  
+  /* adding styles to the main div container*/
+  .container {
+    border-radius: 5px;
+    background-color: #757575a1;
+    width: 50%;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    margin-top: 2.5%;
+
+  }
+
+
+.insideContainer{
+  opacity: 100%;
+  color: white;
+}
+
+.hide{
+  display: none;
+}
+  
+.hide p{
+  font-size: 20px;
+  color: #fd022c;
+}
+
+/* styles for the footer */
+
+/* adding styles for the main div section */
+.footer-container{
+  background-color: rgb(62, 119, 38);
+  padding:2rem 0 1rem 0;
+  margin-top: 60%;
+}
+
+/* adding styles to footer div section  */
+.footer{
+  width: 80%;
+  height: 25vh;
+  background-color: rgb(62, 119, 38);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* adding styles to the footer heading */
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+
+}
+
+.footer-heading h2{
+  margin-bottom: 2rem;
+}
+
+/*  adding styles to footers links*/
+.footer-heading a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+
+}
+
+/* adding hover effect to the links*/
+.footer-heading a:hover, a:active {
+  color: red;
+  transition: 0.3s ease-out;
+  font-size: 140%;
+}
+
+.footer-email-form h2{
+  margin-bottom: 2rem;
+
+}
+
+/* adding styles to footer  */
+#footer-email{
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* adding a placeholder to the footer */
+#footer-email::placeholder{
+  color: rgb(151, 150, 150);
+}
+
+/* adding styles to the email buttons */
+#footer-email-btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: rgb(69, 160, 98);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+
+}
+
+/* adding hovering effect to the buttons */
+#footer-email-btn:hover{
+  cursor: pointer;
+  background-color: rgb(15, 70, 153);
+  transition: all 0.4s ease-out;
+}
+
+/* adding styles to the image icons */
+.footer img{
+  display: inline;
+  width: 15%;
+  height: auto;
+  padding: 0 0 0 10px;
+  margin:50px 0 0 20px;
+}

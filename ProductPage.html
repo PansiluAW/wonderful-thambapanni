@@ -1,0 +1,233 @@
+<!doctype html>
+	<html lang = "en">
+		<head>
+			<meta charset = "UTF-8">
+			<title>Wonderful තම්බපණ්ණි</title>
+			<!--linking the relevant style sheet-->	
+			<link rel = "stylesheet" href = "ProductPage.css" type = "text/css">
+		</head>
+		<body>
+			<!--head pane of the website-->
+			<div class = "headpane">			
+				<img class = "titlepane" src = "Pictures/Wonderfulතම්බපණ්ණි(whitebg).png" alt = "Wonderful තම්බපණ්ණි Logo" height = "180" width = "150">
+				<p class = "titlepane">WONDERFUL THAMBAPANNI</p>
+				<p id = "paratitlepane">The Beautiful Little Island</p>
+				<!--navigation pane of the website-->
+				<ul id = "navipane">
+					<li><a href = "homepage.html">Home</a></li>
+					<li><a href = "ProductPage.html">Our Products</a></li>
+					<li><a href = "thumbnail.html">Gallery</a></li>
+					<li><a href = "Quiz.html">Quiz</a></li>
+					<li><a href = "homepage.html#location">Locations</a></li>
+					<li><a href = "studentDetail.html">Student Details</a></li>
+					<li><a href = "CwContactUs1.html">Contact Us</a></li>			
+					<li><a href = "siteMap.html">Site Map</a></li>
+				</ul>
+			</div>
+			<br/><br/>
+			<!--title of products page-->
+			<div id = "producttitlebg">
+				<h1 class = "ourproducttitle">| Our Products |</h1>
+				<h2 class = "ourproducttitle">Made with love, by Sri Lankan people, especially for you.</h2>
+			</div>
+			<!--Mask items section-->
+			<div class= "pictures">				
+				<h2 class = "itemtitles">Tradtional Sri Lankan Handmade Masks</h2>
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/mask1.jpg" alt = "Traditional Mask Option 1" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">Black mask with a red blending</p>
+					<p class= "itemdesc">Price : &#36;38.50 | LKR.13837.72 </p>				
+					<p class= "itemdesc">Quantity : <input type = "number" id = "maskqty1" onclick = "quantitymask()" name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/mask2.jpg" alt = "Traditional Mask Option 2" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">Yellow mask with a red blending</p>
+					<p class= "itemdesc">Price : &#36;38.50 | LKR.13837.72 </p>
+					<p class= "itemdesc">Quantity : <input type = "number"  id = "maskqty2" onclick = "quantitymask()" name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/mask3.jpg" alt = "Traditional Mask Option 3" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">Brown mask with a red yellow blending</p>
+					<p class= "itemdesc">Price : &#36;38.50 | LKR.13837.72 </p>
+					<p class= "itemdesc">Quantity : <input type = "number" id = "maskqty3" onclick = "quantitymask()" name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+			</div>
+			<hr id = "ruler">
+			<!--T-Shirt items section-->
+			<div class = "pictures">
+				<h2 class = "itemtitles">Sri Lanka T-Shirt Cotton Collection</h2>		
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/tshirt1.jpg" alt = "Sri Lanka T-shirt Option 1" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">Yellow Cotton T-Shirt with logo (L)</p>
+					<p class= "itemdesc">Price : &#36;12.00 | LKR.4313.06 </p>
+					<p class= "itemdesc">Quantity : <input type = "number" id = "tshirtqty1" onclick = "quantitytshirt()"  name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/tshirt2.jpg" alt = "Sri Lanka T-shirt Option 2" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">White Cotton T-Shirt with a design (L)</p>
+					<p class= "itemdesc">Price : &#36;12.00 | LKR.4313.06 </p>
+					<p class= "itemdesc">Quantity : <input type = "number"  id = "tshirtqty2" onclick = "quantitytshirt()"  name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+				<div class= "productgroups">
+					<a class= "picturesouterlink"><img src = "Pictures/tshirt3.jpg" alt = "Sri Lanka T-shirt Option 3" class = "picturesinnerlink"></a>
+					<p class= "itemdesc">Grey Cotton T-Shirt with logo (L)</p>
+					<p class= "itemdesc">Price : &#36;12.00 | LKR.4313.06 </p>
+					<p class= "itemdesc">Quantity : <input type = "number"  id = "tshirtqty3" onclick = "quantitytshirt()"  name = "quantity" placeholder = "-" min = "0" max = "10"></p>
+				</div>
+			</div>
+			<!--detail form to checkout order-->
+			<div id = "detailform">				
+				<form method = "get" name = "details" >
+					<p id = "formtitle">Check-Out<p>
+					<label class = "form" for = "firstname">First Name : </label>
+					<input class = "form" type = "text" id = "firstname" name = "firstname" size = "20" placeholder = "Sameen *" maxlength = "15">
+					<label class = "form" for = "lastname">Last Name : </label>
+					<input class = "form" type = "text" id = "lastname" name = "lastname" size = "20" placeholder = "Hettiaracchi *" maxlength = "15">
+					<br/><br/>
+					<label class = "form">Gender : </label>
+					<label class = "form" for = "gendermale">&emsp;Male</label>
+					<input class = "form" type = "radio" name = "gender" id = "gendermale" value = "Male">
+					<label class = "form" for = "genderfemale">&emsp;Female</label>
+					<input class = "form" type = "radio" name = "gender" id = "genderfemale" value = "Female">
+					<label class = "form" for = "gendernotspecified">&emsp;Rather Not To Say</label>
+					<input class = "form" type = "radio" name = "gender" id = "gendernotspecified" value = "NoSpecied">
+					<br/><br/>
+					<label class = "form" for = "address">Billing Address : </label>
+					<textarea class = "form" name = "address" id = "address" rows = "2" cols = "70" placeholder = "341/9, Keerthisinghe Road, Kolonnawa, Colombo *"></textarea>
+					<br/><br/>
+					<label class = "form" for = "email">E-mail Address : </label>
+					<input class = "form" type = "email" name = "email" id = "email" placeholder = "Sameen1234@gmail.com *" size = "36">
+					<br/><br/>
+					<label id = "total"></label>
+					<br/><br/>
+					<input id = "checkout" type = "button" onclick = "proceed(this.form)" name = "checkout" value = "Checkout">
+				</form>
+			</div>
+			<!--Common footer of the website-->
+			<div class="footercontainer">
+				<div class="footer">
+					<div class="footerheading">
+						<h2>About us</h2>
+						<a href="EditorPageStudent1.html">Editor's Page</a>
+						<a href="siteMap.html">Site map</a>
+						<a href="CwContactUs1.html">contact us</a>
+					</div>
+                
+					<div class="footeremailform">
+							<h2>Join our newsletter</h2>
+							<input type="email" placeholder="Enter your email address" id="footer-email">
+							<input type="submit" value="Sign Up" id="footer-email-btn">
+					</div> 
+					<div class="footermediaimg">
+						<a href="https://www.facebook.com/"><img src="Pictures/iconmonstr-facebook-4.png" alt="Facebook"></a>
+						<a href="https://www.instagram.com/"><img src="Pictures/iconmonstr-instagram-14.png" alt="Instagram"></a>
+						<a href="https://www.youtube.com/"><img src="Pictures/iconmonstr-youtube-9.png" alt="Youtube"></a>
+					</div>
+				</div>
+			</div>
+			<script>
+			<!--delaring variables-->
+				let tshirt1cont = true;
+				let tshirt2cont = true;
+				let tshirt3cont = true;
+				let mask1cont = true;
+				let mask2cont = true;
+				let mask3cont = true;		
+				let mask = 0;
+				let tshirt = 0;
+				let tshirt1 = 0;
+				let tshirt2 = 0;
+				let tshirt3 = 0;
+				let mask1 = 0;
+				let mask2 = 0;
+				let mask3 = 0;
+				const list = [];
+				let count = 0;		
+				
+				<!--function to update total mask quantity with the increase of each mask item-->
+				function quantitymask(){
+					mask = 0;
+					mask1 = document.getElementById("maskqty1").value;
+					mask2 = document.getElementById("maskqty2").value;
+					mask3 = document.getElementById("maskqty3").value;					
+					if (mask1 === ''){mask1 = 0;}
+					if (mask2 === ''){mask2 = 0;}
+					if (mask3 === ''){mask3 = 0;}
+					mask = parseInt(mask1)+parseInt(mask2)+parseInt(mask3);
+					totalcost();
+					
+				}
+				<!--function to update total t-shirt quantity with the increase of each t-shirt item-->
+				function quantitytshirt(){
+					tshirt = 0;
+					tshirt1 = document.getElementById("tshirtqty1").value;
+					tshirt2 = document.getElementById("tshirtqty2").value;
+					tshirt3 = document.getElementById("tshirtqty3").value;					
+					if (tshirt1 === ''){tshirt1 = 0;}
+					if (tshirt2 === ''){tshirt2 = 0;}
+					if (tshirt3 === ''){tshirt3 = 0;}
+					tshirt = parseInt(tshirt1)+parseInt(tshirt2)+parseInt(tshirt3);
+					totalcost();				
+				}
+				<!--function to get the total cost cosnidering mask quantity and t-shirt quantity-->
+				function totalcost(){
+					totalusd = 0;
+					totallkr = 0;
+					totalusd = (mask*38.50)+(tshirt*12.00);
+					totallkr = (mask*13837.72)+(tshirt*4313.06);
+					document.getElementById("total").innerHTML = "Total : &#36;"+totalusd.toFixed(2)+" | LKR."+totallkr.toFixed(2);
+				}
+				<!--function for the form validation process and displaying created bill-->
+				function proceed(detailform){
+					billinglist()
+					if (detailform.firstname.value === ""){
+						alert("Hmm...\nFirst Name is missing.");
+					}else if (detailform.lastname.value === ""){
+						alert("Hmm...\nLast Name is missing.");
+					}else if (detailform.gender.value === ""){
+						alert("Hmm...\nYou haven't selected your gender.");
+					}else if (detailform.address.value === ""){
+						alert("Hmm...\nWe need to deliver the items to your doorstep\nBilling Address is missing.");
+					}else if (detailform.email.value === ""){
+						alert("Hmm...\nEmail address missing...");
+					}else{
+						alert("Name : "+detailform.firstname.value+" "+detailform.lastname.value+"\nEmail : "+detailform.email.value+"\n\nInvoice Details\n--------------------------------------\n"+list.join('\n')+"\nTotal Bill : $"+totalusd.toFixed(2)+" | LKR."+totallkr.toFixed(2));
+					}
+				}
+				
+				<!--function for creating the bill-->
+				function billinglist(){
+					if (mask1 !=0 && mask1cont == true){
+					list[count] = "Black mask with a red blending\n"+"Quantity : "+mask1+"\nPrice : $38.50\n";
+					count+=1;
+					mask1cont = false;
+					}
+					if (mask2 !=0 && mask2cont == true){
+					list[count] = "Yellow mask with a red blending\n"+"Quantity : "+mask2+"\nPrice : $38.50\n";
+					count+=1;
+					mask2cont = false;
+					}
+					if (mask3 !=0 && mask3cont == true){
+					list[count] = "Brown mask with a red yellow blending\n"+"Quantity : "+mask3+"\nPrice : $38.50\n";
+					count+=1;
+					mask3cont = false;
+					}
+					if (tshirt1 !=0 && tshirt1cont == true) {
+					list[count] = "Yellow Cotton T-Shirt with logo (L)\n"+"Quantity : "+tshirt1+"\nPrice : $38.50\n";
+					count+=1;
+					tshirt1cont = false;
+					}
+					if (tshirt2 !=0 && tshirt2cont == true){
+					list[count] = "White Cotton T-Shirt with a design (L)\n"+"Quantity : "+tshirt2+"\nPrice : $38.50\n";
+					count+=1;
+					tshirt2cont = false;
+					}
+					if (tshirt3 !=0 && tshirt3cont == true){
+					list[count] = "Grey Cotton T-Shirt with logo (L)\n"+"Quantity : "+tshirt3+"\nPrice : $38.50\n";
+					count+=1;
+					tshirt3cont = false;
+					}
+				}
+			</script>
+		</body>
+	</html>

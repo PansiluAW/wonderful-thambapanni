@@ -1,0 +1,253 @@
+/* the navigation pane */
+.headpane{
+    display:inline-block;
+    position:sticky;
+    top:0;
+    background-color:#11998e;
+    z-index:1;
+}
+/* setting the size in the navigation pane*/
+div.headpane{
+    width:100%;
+    height:150px;
+}
+
+/* setting the css for the title in the navigation Pane*/
+p.titlepane{
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:8px;
+    font-weight:bolder;
+}
+
+
+img.titlepane{
+    float:left;
+}
+
+/* adding styles to the beautiful little island */
+#paratitlepane{
+    font-size:25px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+/* the styles for the navigation pane*/
+#navipane li{
+    list-style-type:none;
+    color: white;
+    display:inline-block;
+    font-size: 34px;
+    background-color: #505050;
+    padding-left:19px;
+    padding-right:19px;
+    margin-right:-4px;
+    transition: 0.3s;
+}
+
+/*adding hovering to the navigation pane*/
+#navipane li:hover{
+    background-color: #11998e;
+}
+
+#navipane li a{
+    color: white;
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* adding styles to the main heading*/
+.top{
+    min-height: 60vh;
+    width: 100%;
+    background-image:url(Pictures/sander-don-sGg_8msiIt0-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* adding styles to the main heading*/
+.title h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 180px;
+    padding-top: 5%;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px black ;
+}
+
+/* adding styles to the what is sigiriya and importance of sigiriya div*/
+.description{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.637);
+    width: 40%;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 26%;
+    top: 21%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p{
+    opacity: 100%;
+}
+
+/* adding styles to the background image */
+.bgimg{
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/dylan-shaw-smUAKwMT8XA-unsplash1.jpg);
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 2500px;
+
+}
+
+/* adding styles to the history of sigiriya div*/
+.description2{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.637);
+    width: 80%;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 167%;
+    top: 155%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* changing the font syle of the sub headings*/
+.heading2{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* adding styles to the map of sri lanka picture*/
+.image{
+    width: 30%;
+    transform: translate(-0%,-50%);
+    position: absolute;
+    left: 55%;
+    top: 90%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    margin-top: 29%;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+/* adding styles to the sigiri frescoes picture*/
+.image2{
+    transform: translate(-0%,-50%);
+    position: absolute;
+    left: 4%;
+    top: 280%;
+    border-color:3px solid #000000;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* styles for the footer */
+
+/* adding styles to the footer container div*/
+.footer-container{
+    background-color: rgb(62, 119, 38);
+    padding:2rem 0 1rem 0;
+}
+
+/* */
+.footer{
+    width: 80%;
+    height: 25vh;
+    background-color: rgb(62, 119, 38);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+
+.footer-heading a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+}
+
+.footer-heading a:hover, a:active {
+    color: red;
+    transition: 0.3s ease-out;
+    font-size: 160%;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: rgb(151, 150, 150);
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(69, 160, 98);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: rgb(15, 70, 153);
+    transition: all 0.4s ease-out;
+}
+
+.footer img{
+    display: inline;
+    width: 15%;
+    height: auto;
+    padding: 0 0 0 10px;
+    margin:50px 0 0 20px;
+}

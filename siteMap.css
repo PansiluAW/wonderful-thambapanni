@@ -1,0 +1,188 @@
+body{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: rgb(175, 227, 208);
+}
+
+line{
+    stroke:rgb(0, 0, 0);
+    stroke-width:2;
+}
+
+.map{
+    width: 1250px;
+    height: 800px;
+    margin-left: 15%;
+    margin-right: 2%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.heading{
+    font-size: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+polyline{
+    stroke:rgb(0, 0, 0);
+    stroke-width:2
+}          
+
+.leaf rect{
+    fill: rgb(0, 0, 0); 
+    stroke-width:3; 
+    stroke: black;
+}
+
+.leaf:hover rect{
+    fill: rgb(255, 255, 255); 
+    stroke-width:3;
+    color: black; 
+    stroke: black;
+}
+
+.leaf text{
+    fill: white;
+}
+
+.leaf:hover text{
+    fill: black;
+}
+
+
+.headpane{
+    display:inline-block;
+    position:sticky;
+    top:0;
+    background-color:#11998e;
+}
+    
+div.headpane{
+    width:100%;
+    height:150px;
+}
+ 
+p.titlepane{
+    font-size:50px;
+    margin-top:30px;
+    margin-bottom:8px;
+    font-weight:bolder;
+}
+
+img.titlepane{
+    float:left;
+}
+
+
+.footer-container{
+    background-color: rgb(62, 119, 38);
+    padding:2rem 0 1rem 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    background-color: rgb(62, 119, 38);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+}
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+.footer-heading a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+}
+.footer-heading a:hover, a::after{
+    color: red;
+    transition: 0.3s ease-out;
+    font-size: 160%;
+}
+.footer-email-form h2{
+    margin-bottom: 2rem;
+
+}
+.footer img{
+    display: inline;
+    width: 15%;
+    height: auto;
+    padding: 0 0 0 10px;
+    margin:50px 0 0 20px;
+}
+
+#footer-email{
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+    color: rgb(151, 150, 150);
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(69, 160, 98);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+
+}
+#footer-email-btn:hover{
+    cursor: pointer;
+    background-color: rgb(15, 70, 153);
+    transition: all 0.4s ease-out;
+}
+
+#paratitlepane{
+    font-size:25px;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:10px;
+    font-weight:bold;
+}
+#navipane li{
+    list-style-type:none;
+    color: white;
+    display:inline-block;
+    font-size: 34px;
+    background-color: #505050;
+    padding-left:19px;
+    padding-right:19px;
+    margin-right:-4px;
+}
+
+#navipane li:hover{
+    background-color: #11998e;
+
+}
+
+#navipane li a{
+    color: white;
+    text-decoration:none;
+}
+
